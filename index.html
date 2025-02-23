@@ -1,136 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Copy Code Snippet</title>
-    <style>
-      body {
-        font-family: DKBEuclid, Arial, sans-serif;
-      }
-      pre {
-        background: #f4f4f4;
-        padding: 10px;
-        border-radius: 5px;
-        overflow-x: auto;
-      }
-      button {
-        margin-top: 5px;
-        cursor: pointer;
-      }
 
-      .flex {
-        display: flex;
-        gap: 48px;
-      }
-      .flex > div {
-        flex-grow: 1;
-        width: 50%;
-      }
-      .text-input {
-        height: 40px;
-        width: 100%;
-        border: 1px solid #ccc;
-    }
-    .text-input-modern {
-        width: 95%;
-        background-color: rgba(0, 144, 255, 0.05);
-        padding: 12px 15px;
-        font-size: 16px;
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        outline: none;
-        transition: 0.3s;
-        border-color: #007BFF;
-      }
-      .text-input-modern:focus {
-          box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-          }
-    .text-input-fancy {
-        font-family: inherit;
-        width: 100%;
-        border: 0;
-        border-bottom: 2px solid #11998e;
-        outline: 0;
-        font-size: 1.3rem;
-        color: #fff;
-        padding: 7px 0;
-        background: transparent;
-        transition: border-color 0.2s;
-      }
-      .label-fancy{
-        color: #11998e;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Girls Day</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-    .header {
-        font-size: 1.5rem;
-        font-weight: 600;
-        letter-spacing: 0.0125rem;
-        line-height: 1.875rem;
-      }
-      .login-button {
-        height: 48px;
-        padding: 12px 18px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>HTML</h1>
-    <!-- -----------------------------------------------------<h2>Überschrift</h2> -->
-    <h2>Überschrift</h2>
-    <div class="flex">
-      <div>
-        <pre id="header">
+<body>
+  <h1>HTML</h1>
+  <!-- -----------------------------------------------------<h2>Überschrift</h2> -->
+  <h2>Überschrift</h2>
+  <div class="flex">
+    <div>
+      <pre id="header">
 <code>
     &lt;h1&gt;Hello, World!&lt;/h1&gt;
 </code>
     </pre>
-        <button onclick="copyCode('header')">Copy Code</button>
-      </div>
-      <div>
-        <h1 class="header">Hello, World!</h1>
-      </div>
+      <button onclick="copyCode('header')">Copy Code</button>
     </div>
+    <div>
+      <h1 class="header">Hello, World!</h1>
+    </div>
+  </div>
 
-    <!-- -----------------------------------------------------<h2>Input</h2> -->
-    <h2>Input Style</h2>
-    <div class="flex">
-      <div>
-        <pre id="input">
+  <!-- -----------------------------------------------------<h2>Input</h2> -->
+  <h2>Input</h2>
+  <div class="flex">
+    <div>
+      <pre id="input">
 <code>
     &lt;label for="name">Login: &lt;/label&gt;
     &lt;input type="text" id="name" name="name" class="text-input"  /&gt;
 </code>
     </pre>
-        <button onclick="copyCode('input')">Copy Code</button>
-      </div>
-      <div>
-        <label for="name">Name (4 to 8 characters): </label>
-        <input type="text" id="name" name="name" class="text-input" />
-      </div>
+      <button onclick="copyCode('input')">Copy Code</button>
     </div>
+    <div>
+      <label for="name">Name (4 to 8 characters): </label>
+      <input type="text" id="name" name="name" class="text-input" />
+    </div>
+  </div>
 
-    <!-- -----------------------------------------------------<h2>Button</h2> -->
-    <h2>Button</h2>
-    <div class="flex">
-      <div>
-        <pre id="button">
+  <!-- -----------------------------------------------------<h2>Button</h2> -->
+  <h2>Button</h2>
+  <div class="flex">
+    <div>
+      <pre id="button">
 <code>
     &lt;button id="loginButton">Login&lt;/button&gt;
 </code>
     </pre>
-        <button onclick="copyCode('button')">Copy Code</button>
-      </div>
-      <div>
-        <button id="loginButton" class="login-button">Login</button>
-      </div>
+      <button onclick="copyCode('button')">Copy Code</button>
     </div>
-      <h1>CSS</h1>
-          <!-- -----------------------------------------------------<h2>Input Modern</h2> -->
-    <h2>Input Modern</h2>
-    <div class="flex">
-      <div>
-        <pre id="inputStyle">
+    <div>
+      <button id="loginButton" class="login-button">Login</button>
+    </div>
+  </div>
+  <h1>CSS</h1>
+  <!-- -----------------------------------------------------<h2>Input Modern</h2> -->
+  <h2>Input Modern</h2>
+  <div class="flex">
+    <div>
+      <pre id="inputStyle">
 <code>
     .text-input {
         width: 95%;
@@ -149,18 +83,18 @@
     }
 </code>
     </pre>
-        <button onclick="copyCode('inputStyle')">Copy CSS </button>
-      </div>
-      <div>
-        <label for="name">Name (4 to 8 characters): </label>
-        <input type="text" id="name" name="name" class="text-input-modern" />
-      </div>
+      <button onclick="copyCode('inputStyle')">Copy CSS </button>
     </div>
-          <!-- -----------------------------------------------------<h2>Input Fancy</h2> -->
-    <h2>Input Fancy</h2>
-    <div class="flex">
-      <div>
-        <pre id="inputStyle2">
+    <div>
+      <label for="name">Name (4 to 8 characters): </label>
+      <input type="text" id="name" name="name" class="text-input-modern" />
+    </div>
+  </div>
+  <!-- -----------------------------------------------------<h2>Input Fancy</h2> -->
+  <h2>Input Fancy</h2>
+  <div class="flex">
+    <div>
+      <pre id="inputStyle2">
 <code>
     .text-input {
         font-family: inherit;
@@ -179,28 +113,29 @@
       }
 </code>
     </pre>
-        <button onclick="copyCode('inputStyle2')">Copy CSS </button>
-      </div>
-      <div>
-        <label for="name" class="label-fancy">Name (4 to 8 characters): </label>
-        <input type="text" id="name" name="name" class="text-input-fancy" />
-      </div>
+      <button onclick="copyCode('inputStyle2')">Copy CSS </button>
     </div>
+    <div>
+      <label for="name" class="label-fancy">Name (4 to 8 characters): </label>
+      <input type="text" id="name" name="name" class="text-input-fancy" />
     </div>
-    <script>
-      function copyCode(id) {
-        const codeElement = document.querySelector(`#${id} code`);
-        const text = codeElement.innerText || codeElement.textContent;
+  </div>
+  </div>
+  <script>
+    function copyCode(id) {
+      const codeElement = document.querySelector(`#${id} code`);
+      const text = codeElement.innerText || codeElement.textContent;
 
-        navigator.clipboard
-          .writeText(text)
-          .then(() => {
-            console.log("copied");
-          })
-          .catch((err) => {
-            console.error("Failed to copy: ", err);
-          });
-      }
-    </script>
-  </body>
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          console.log("copied");
+        })
+        .catch((err) => {
+          console.error("Failed to copy: ", err);
+        });
+    }
+  </script>
+</body>
+
 </html>
