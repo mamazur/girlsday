@@ -83,4 +83,15 @@ button {
     font-size: 1rem;
     font-family: "Gill Sans", sans-serif;
     letter-spacing: 1px;
-  }
+}
+
+.textblock-bridgerton {
+    font-size: 1rem;
+    font-family: cursive;
+    letter-spacing: 1.5px;
+}
+
+.image {
+    width: 300px;
+    aspect-ratio: 3 / 4;
+}
