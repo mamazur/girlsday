@@ -26,6 +26,22 @@
     </div>
   </div>
 
+    <!-- -----------------------------------------------------<h2>Textblock</h2> -->
+    <h2>Textblock</h2>
+    <div class="flex">
+      <div>
+        <pre id="textblock">
+  <code>
+      &lt;p&gt;Hier kannst du einen Beschreibungstext einfügen.&lt;/p&gt;
+  </code>
+      </pre>
+        <button onclick="copyCode('textblock')">Copy Code</button>
+      </div>
+      <div>
+        <p class="textblock">Hier kannst du einen Beschreibungstext einfügen.</p>
+      </div>
+    </div>
+
   <!-- -----------------------------------------------------<h2>Input</h2> -->
   <h2>Input</h2>
   <div class="flex">
@@ -59,7 +75,28 @@
       <button id="loginButton" class="login-button">Login</button>
     </div>
   </div>
+
+  
   <h1>CSS</h1>
+    <!-- -----------------------------------------------------<h2>Textblock Modern</h2> -->
+    <h2>Textblock Modern</h2>
+    <div class="flex">
+      <div>
+        <pre id="textboxStyle">
+  <code>
+      .textblock-modern {
+          font-size: 1rem;
+          font-family: "Gill Sans", sans-serif;
+          letter-spacing: 1px;
+      }
+  </code>
+      </pre>
+        <button onclick="copyCode('textboxStyle')">Copy CSS</button>
+      </div>
+      <div>
+        <p class="textblock-modern">Hier kannst du einen Beschreibungstext einfügen.</p>
+      </div>
+    </div>
   <!-- -----------------------------------------------------<h2>Input Modern</h2> -->
   <h2>Input Modern</h2>
   <div class="flex">
@@ -83,7 +120,7 @@
     }
 </code>
     </pre>
-      <button onclick="copyCode('inputStyle')">Copy CSS </button>
+      <button onclick="copyCode('inputStyle')">Copy CSS</button>
     </div>
     <div>
       <label for="name">Name (4 to 8 characters): </label>
@@ -113,7 +150,7 @@
       }
 </code>
     </pre>
-      <button onclick="copyCode('inputStyle2')">Copy CSS </button>
+      <button onclick="copyCode('inputStyle2')">Copy CSS</button>
     </div>
     <div>
       <label for="name" class="label-fancy">Name (4 to 8 characters): </label>
@@ -121,6 +158,7 @@
     </div>
   </div>
   </div>
+
   <script>
     function copyCode(id) {
       const codeElement = document.querySelector(`#${id} code`);

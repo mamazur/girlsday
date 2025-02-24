@@ -74,3 +74,13 @@ button {
     height: 48px;
     padding: 12px 18px;
 }
+
+.textblock {
+    font-size: 1rem,
+}
+
+.textblock-modern {
+    font-size: 1rem;
+    font-family: "Gill Sans", sans-serif;
+    letter-spacing: 1px;
+  }
