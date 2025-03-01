@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ListItem from './ListItem.vue'
-import CopyBlock from '@/components/CopyBlock.vue'
+import CopyBlock from '../components/CopyBlock.vue'
 
 </script>
 

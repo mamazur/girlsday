@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import StyleList from '@/components/StyleList.vue';
-import ElementList from '@/components/ElementList.vue'
+import StyleList from '../components/StyleList.vue';
+import ElementList from '../components/ElementList.vue'
 </script>
 
 <template>
