@@ -27,7 +27,7 @@ import CopyBlock from '../components/CopyBlock.vue'
     <CopyBlock :htmlCode="`
     <div>
       <label for='name'>Mein Input</label>
-      <input type='text' id='name' name='name' class='text-input' />
+      <input type='text' id='name' name='name' class='input' />
     </div>
       `">
     </CopyBlock>
@@ -40,7 +40,7 @@ import CopyBlock from '../components/CopyBlock.vue'
     <template #heading>Button</template>
     <CopyBlock :htmlCode="`
     <div>
-       <button class='button'>Login</button>
+      <button class='button'>Login</button>
     </div>
       `">
     </CopyBlock>
@@ -53,7 +53,7 @@ import CopyBlock from '../components/CopyBlock.vue'
     <template #heading>Image</template>
     <CopyBlock :htmlCode="`
     <div>
-        <image src='beispiel-bild.jpg' />
+      <image src='beispiel-bild.jpg' />
     </div>
     `">
     </CopyBlock>

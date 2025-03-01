@@ -11,10 +11,10 @@ import CopyBlock from '../components/CopyBlock.vue'
     </template>
     <template #heading>Textblock Modern</template>
     <CopyBlock :htmlCode="`
-      .textblock-modern {
-          font-size: 1rem;
-          font-family: 'Gill Sans', sans-serif; letter-spacing: 1px; 
-      } `" addColor></CopyBlock>
+    .textblock-modern {
+        font-size: 1rem;
+        font-family: 'Gill Sans', sans-serif; letter-spacing: 1px; 
+    }`" addColor></CopyBlock>
   </ListItem>
   <ListItem addColor>
     <template #icon>
@@ -22,11 +22,11 @@ import CopyBlock from '../components/CopyBlock.vue'
     </template>
     <template #heading>Textblock Bridgerton</template>
     <CopyBlock :htmlCode="`
-      .textblock-bridgerton {
-          font-size: 1rem;
-          font-family: cursive;
-          letter-spacing: 1.5px;
-      } `" addColor></CopyBlock>
+    .textblock-bridgerton {
+        font-size: 1rem;
+        font-family: cursive;
+        letter-spacing: 1.5px;
+    } `" addColor></CopyBlock>
   </ListItem>
   <ListItem addColor>
     <template #icon>
@@ -50,7 +50,6 @@ import CopyBlock from '../components/CopyBlock.vue'
     </template>
     <template #heading>Cute Button</template>
     <CopyBlock :htmlCode="`
- 
 .cute-button {
   background-color: #EA4C89;
   border-radius: 8px;

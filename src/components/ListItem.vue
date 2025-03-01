@@ -41,8 +41,8 @@ i {
 }
 
 .color {
-  background-color: rgb(255, 244, 231);
-  border: 1px solid orange;
+  background-color: rgb(242, 231, 255);
+  border: 1px solid rgb(197, 149, 255);
 }
 
 h3 {
