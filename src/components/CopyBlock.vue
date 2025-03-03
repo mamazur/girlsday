@@ -1,25 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const props = defineProps<{ htmlCode: string, addColor?: boolean }>()
-const copied = ref(false);
-const codeBlock = ref(null);
+const props = defineProps<{ htmlCode: string; addColor?: 'lilac' | 'green' | 'gray' }>()
+const copied = ref(false)
+const codeBlock = ref(null)
 
 const copyToClipboard = async () => {
   try {
-    await navigator.clipboard.writeText(props.htmlCode);
-    copied.value = true;
-    setTimeout(() => (copied.value = false), 2000);
+    await navigator.clipboard.writeText(props.htmlCode)
+    copied.value = true
+    setTimeout(() => (copied.value = false), 2000)
   } catch (err) {
-    console.error('Failed to copy:', err);
+    console.error('Failed to copy:', err)
   }
-};
+}
 </script>
 <template>
-  <div class="code-block" :class="{ color: addColor }">
+  <div class="code-block" :class="{ lilac: addColor === 'lilac', green: addColor === 'green' }">
     <pre><code ref="codeBlock">{{ htmlCode }}</code></pre>
     <button @click="copyToClipboard" class="copy-button">
-      {{ copied ? "Copied!" : "Copy" }}
+      {{ copied ? 'Copied!' : 'Copy' }}
     </button>
   </div>
 </template>
@@ -32,7 +32,7 @@ const copyToClipboard = async () => {
   margin: 24px;
   padding: 24px;
 }
- 
+
 .copy-button {
   right: 0;
   top: 0;
@@ -40,8 +40,12 @@ const copyToClipboard = async () => {
   margin: 24px;
 }
 
-.color {
+.lilac {
   background-color: rgb(242, 231, 255);
   border: 1px solid rgb(197, 149, 255);
+}
+.green {
+  background-color: rgb(231, 255, 246);
+  border: 1px solid rgb(168, 217, 194);
 }
 </style>

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 
 
-const props = defineProps<{ addColor?: boolean }>()
+const props = defineProps<{ addColor?: 'lilac' | 'green' | 'gray' }>()
 
 </script>
 <template>
   <div class="item">
-    <i :class="{ color: addColor }">
+    <i :class="{ lilac: addColor === 'lilac', green: addColor === 'green' }">
       <slot name="icon"></slot>
     </i>
     <div class="details">
@@ -40,9 +40,13 @@ i {
   color: var(--color-text);
 }
 
-.color {
+.lilac {
   background-color: rgb(242, 231, 255);
   border: 1px solid rgb(197, 149, 255);
+}
+.green {
+  background-color: rgb(231, 255, 246);
+  border: 1px solid rgb(162, 255, 210);
 }
 
 h3 {

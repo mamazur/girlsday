@@ -5,7 +5,7 @@ import CopyBlock from '../components/CopyBlock.vue'
 
 <template>
   <h1>CSS Klassen</h1>
-  <ListItem addColor>
+  <ListItem addColor="lilac">
     <template #icon> CSS </template>
     <template #heading>Textblock Modern</template>
     <CopyBlock
@@ -14,10 +14,10 @@ import CopyBlock from '../components/CopyBlock.vue'
         font-size: 1rem;
         font-family: 'Gill Sans', sans-serif; letter-spacing: 1px; 
     }`"
-      addColor
+      addColor="lilac"
     ></CopyBlock>
   </ListItem>
-  <ListItem addColor>
+  <ListItem addColor="lilac">
     <template #icon> CSS </template>
     <template #heading>Textblock Bridgerton</template>
     <CopyBlock
@@ -27,10 +27,10 @@ import CopyBlock from '../components/CopyBlock.vue'
         font-family: cursive;
         letter-spacing: 1.5px;
     } `"
-      addColor
+      addColor="lilac"
     ></CopyBlock>
   </ListItem>
-  <ListItem addColor>
+  <ListItem addColor="lilac">
     <template #icon> CSS </template>
     <template #heading>Modern Input</template>
     <CopyBlock
@@ -44,10 +44,10 @@ import CopyBlock from '../components/CopyBlock.vue'
         border-radius: 5px;
         outline: none;
       } `"
-      addColor
+      addColor="lilac"
     ></CopyBlock>
   </ListItem>
-  <ListItem addColor>
+  <ListItem addColor="lilac">
     <template #icon> CSS </template>
     <template #heading>Cute Button</template>
     <CopyBlock
@@ -61,7 +61,7 @@ import CopyBlock from '../components/CopyBlock.vue'
   cursor: pointer;
   display: inline-block;
  } `"
-      addColor
+      addColor="lilac"
     ></CopyBlock>
   </ListItem>
 </template>
