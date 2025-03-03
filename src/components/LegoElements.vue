@@ -16,18 +16,18 @@ import ListItem from './ListItem.vue'
       </div>
       
       <div class="element">
-        <button class="button">Login</button>
+        <button class="button">Ein Button</button>
       </div>
       
       <div class="element">
-        <h1>Das ist die Überschrift</h1>
+        <h1>Das ist eine Überschrift</h1>
       </div>
       <div class="element">
-        <button class="cute-button">Absenden</button>
+        <button class="cute-button">Ein anderer Button</button>
       </div>
       
       <div class="element">
-        <label for="name">Mein Input</label>
+        <label for="name">Ein Eingabefeld</label>
         <input type="text" id="name" name="name" class="input" />
       </div>
       <div class="element textblock-bridgerton">
