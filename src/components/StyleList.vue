@@ -1,39 +1,40 @@
 <script setup lang="ts">
 import ListItem from './ListItem.vue'
 import CopyBlock from '../components/CopyBlock.vue'
-
 </script>
 
 <template>
+  <h1>CSS Klassen</h1>
   <ListItem addColor>
-    <template #icon>
-      CSS
-    </template>
+    <template #icon> CSS </template>
     <template #heading>Textblock Modern</template>
-    <CopyBlock :htmlCode="`
+    <CopyBlock
+      :htmlCode="`
     .textblock-modern {
         font-size: 1rem;
         font-family: 'Gill Sans', sans-serif; letter-spacing: 1px; 
-    }`" addColor></CopyBlock>
+    }`"
+      addColor
+    ></CopyBlock>
   </ListItem>
   <ListItem addColor>
-    <template #icon>
-      CSS
-    </template>
+    <template #icon> CSS </template>
     <template #heading>Textblock Bridgerton</template>
-    <CopyBlock :htmlCode="`
+    <CopyBlock
+      :htmlCode="`
     .textblock-bridgerton {
         font-size: 1rem;
         font-family: cursive;
         letter-spacing: 1.5px;
-    } `" addColor></CopyBlock>
+    } `"
+      addColor
+    ></CopyBlock>
   </ListItem>
   <ListItem addColor>
-    <template #icon>
-      CSS
-    </template>
+    <template #icon> CSS </template>
     <template #heading>Modern Input</template>
-    <CopyBlock :htmlCode="`
+    <CopyBlock
+      :htmlCode="`
     .modern-input {
         width: 95%;
         background-color: rgba(0, 144, 255, 0.05);
@@ -42,14 +43,15 @@ import CopyBlock from '../components/CopyBlock.vue'
         border: 2px solid #ccc;
         border-radius: 5px;
         outline: none;
-      } `" addColor></CopyBlock>
+      } `"
+      addColor
+    ></CopyBlock>
   </ListItem>
   <ListItem addColor>
-    <template #icon>
-      CSS
-    </template>
+    <template #icon> CSS </template>
     <template #heading>Cute Button</template>
-    <CopyBlock :htmlCode="`
+    <CopyBlock
+      :htmlCode="`
 .cute-button {
   background-color: #EA4C89;
   border-radius: 8px;
@@ -58,7 +60,8 @@ import CopyBlock from '../components/CopyBlock.vue'
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
- } `" addColor></CopyBlock>
+ } `"
+      addColor
+    ></CopyBlock>
   </ListItem>
-
 </template>
