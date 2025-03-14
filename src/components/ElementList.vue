@@ -51,7 +51,7 @@ import CopyBlock from '../components/CopyBlock.vue'
 
   <ListItem addColor="green">
     <template #icon> HTML </template>
-    <template #heading>Image</template>
+    <template #heading>Bild</template>
     <CopyBlock
       :htmlCode="`
     <div>

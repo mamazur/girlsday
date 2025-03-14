@@ -11,7 +11,7 @@ import CopyBlock from '../components/CopyBlock.vue'
     <CopyBlock
       :htmlCode="`
     .textblock-modern {
-        font-size: 1rem;
+        font-size: 16px;
         font-family: 'Gill Sans', sans-serif; letter-spacing: 1px; 
     }`"
       addColor="lilac"
@@ -23,7 +23,7 @@ import CopyBlock from '../components/CopyBlock.vue'
     <CopyBlock
       :htmlCode="`
     .textblock-bridgerton {
-        font-size: 1rem;
+        font-size: 16px;
         font-family: cursive;
         letter-spacing: 1.5px;
     } `"
@@ -36,10 +36,9 @@ import CopyBlock from '../components/CopyBlock.vue'
     <CopyBlock
       :htmlCode="`
     .modern-input {
-        width: 95%;
-        background-color: rgba(0, 144, 255, 0.05);
+        background-color: pink;
         padding: 12px 15px;
-        border-color: #007BFF;
+        border-color: gray;
         border: 2px solid #ccc;
         border-radius: 5px;
         outline: none;
@@ -53,11 +52,11 @@ import CopyBlock from '../components/CopyBlock.vue'
     <CopyBlock
       :htmlCode="`
 .cute-button {
-  background-color: #EA4C89;
+  background-color: pink;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: white;
   cursor: pointer;
   display: inline-block;
  } `"
