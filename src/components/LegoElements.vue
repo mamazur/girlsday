@@ -32,7 +32,7 @@ import ListItem from './ListItem.vue'
       </div>
 
       <div class="element">
-        <img src="../../public/cupcake.jpg" height="200px" />
+        <img src="@/assets/cupcake.jpg" height="200px" />
       </div>
       <div class="element">
         <p>Das ist ein längerer Textabschnitt, damit man sogar einen Zeilenumbruch sehen kann.</p>

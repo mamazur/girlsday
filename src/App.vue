@@ -1,12 +1,22 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import StyleList from '@/components/StyleList.vue'
+import ElementList from '@/components/ElementList.vue'
+import Glowing from '@/components/Glowing.vue'
+import LegoElements from '@/components/LegoElements.vue'
 </script>
 
 <template>
-  <RouterView></RouterView>
+  <img src="@/assets/logo.jpg" />
+  <main>
+    <LegoElements></LegoElements>
+    <ElementList />
+    <Glowing></Glowing>
+    <StyleList />
+    <Glowing></Glowing>
+  </main>
 </template>
 <style scoped>
-#bg-wrap {
-  position: relative;
+main {
+  min-height: 100vh;
 }
 </style>
